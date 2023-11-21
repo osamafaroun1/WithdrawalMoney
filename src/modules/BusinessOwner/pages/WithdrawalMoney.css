@@ -1,0 +1,232 @@
+
+.ms-recipient-information-card {
+    width: 70%;
+    height: max-content;
+    margin: 2rem auto;
+    background-color: white;
+    padding: 2rem 4rem;
+    border-radius: 1.875rem;
+    box-shadow: 0px 4px 20px 0px rgba(40, 40, 40, 0.15);
+}
+
+.ms-recipient-information-card .ms-ri-card-title {
+    font-size: 1.5rem;
+    color: #282828;
+    font-weight: 700;
+}
+
+.ms-recipient-information-card .ms-ri-card-des {
+    font-size: 1rem;
+    color: #282828;
+    font-weight: 400;
+    line-height: 1.5rem;
+}
+
+.ms-recipient-information-card .ms-ri-line {
+    width: 100%;
+    height: 1px;
+    margin-top: 1rem;
+    background-color: #979797;
+}
+
+.ms-recipient-information-card .ms-ri-card-input-container {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    gap: 1.5rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ms-recipient-information-card .ms-ri-card-input-container .ms-ri-card-column {
+    width: 100%;
+    height: max-content;
+    display: flex;
+
+    flex-direction: column;
+}
+
+.ms-recipient-information-card .ms-ri-card-input-container .ms-ri-card-column .ms-ri-payment {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.ms-recipient-information-card .ms-ri-card-input-container .ms-ri-card-column div {
+    display: flex;
+
+    height: 4.2rem;
+    padding: 2.1875rem 0rem 0.25rem 0rem;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 0.125rem;
+    flex-shrink: 0;
+}
+
+.ms-recipient-information-card .ms-ri-card-input-container .ms-ri-card-column div input,
+.ms-recipient-information-card .ms-ri-card-input-container .ms-ri-card-column div select {
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    border: none;
+    border-bottom: solid 1px #282828;
+}
+
+.ms-recipient-information-card .ms-ri-card-input-container .ms-ri-card-column div input:focus,
+.ms-recipient-information-card .ms-ri-card-input-container .ms-ri-card-column div select:focus {
+    border-bottom: solid 1px var(--clr-main);
+}
+
+.ms-recipient-information-card .ms-ri-card-input-container .ms-ri-card-column div input,
+.ms-recipient-information-card .ms-ri-card-input-container .ms-ri-card-column div select:focus {
+    outline: none;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    display: none;
+}
+
+.ms-recipient-information-card .ms-ri-card-input-container .ms-ri-card-column div label {
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.75rem;
+}
+
+.ms-recipient-information-card .lbl-error {
+    font-size: 0.7rem;
+    color: var(--clr-danger);
+    margin: 0;
+    padding: 0;
+}
+
+.ms-wm-main {
+    width: 100%;
+    min-height: 100vh;
+    max-height: max-content;
+    background: url("../Images/background-image.png") lightgray 50% / cover no-repeat;
+    padding: 0;
+    padding-top: 7rem;
+    padding-bottom: 3rem;
+}
+
+.ms-wm-main .ms-wm-title {
+    color: #000;
+    font-size: 1.5rem;
+
+    text-align: center;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.ms-wm-main .ms-wm-des {
+    max-width: 50%;
+    margin: auto;
+    text-align: center;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5rem;
+}
+
+.ms-wm-main .ms-wm-buttuns {
+    width: max-content;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin: auto;
+    margin-top: 5rem;
+}
+
+.ms-wm-main .ms-wm-buttuns .ms-wm-cancel-btn {
+    color: #ea4335;
+    text-align: center;
+    width: max-content;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    height: 2.5rem;
+
+    padding: 0.3rem 0.7rem;
+    border-radius: 5px;
+    transition: all 0.4s ease-in-out;
+}
+
+.ms-wm-main .ms-wm-buttuns .ms-wm-cancel-btn:hover {
+    background-color: #ea4335;
+    color: white;
+    transform: translateY(-3px) scale(1.01);
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+.ms-wm-main .ms-wm-buttuns .ms-wm-confirm-btn {
+    width: 13rem;
+    height: 2.5rem;
+    user-select: none;
+    line-height: 2.5rem;
+    color: white;
+    background-color: #282828;
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 700;
+    border-radius: 0.3125rem;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+
+.ms-wm-main .ms-wm-buttuns .ms-wm-confirm-btn:hover {
+    transform: translateY(-5px) scale(1.01);
+
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    background-color: white;
+    color: var(--clr-secondary-black);
+}
+
+@media (max-width: 768px) {
+    .ms-wm-main .ms-wm-des {
+        max-width: 70%;
+    }
+}
+
+
+@media (max-width: 992px) {
+    .ms-recipient-information-card {
+        padding: 2rem 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .ms-recipient-information-card .ms-ri-card-input-container {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .ms-recipient-information-card {
+        padding: 2rem 2rem;
+    }
+
+    .ms-recipient-information-card .ms-ri-card-title,
+    .ms-recipient-information-card .ms-ri-card-des {
+        margin: auto;
+        text-align: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .ms-recipient-information-card {
+        width: 90%;
+        padding: 1rem 2rem;
+    }
+}
+
+@media (max-width: 350px) {
+    :root {
+        font-size: 12px;
+    }
+}

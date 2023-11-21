@@ -1,0 +1,22 @@
+:root {
+  /* colors */
+  --clr-main: #ff8500;
+  --clr-white: #ffffff;
+  --clr-black: #000;
+  --clr-disable: #93bcbc;
+  --clr-succsess: #71aa27;
+  --clr-danger: #c61414;
+  --clr-secondary-black: #282828;
+  --clr-brightness-pink: rgba(255, 133, 0, 0.2);
+  --clr-brightness-blue: #1d5edd;
+
+  /* font family */
+  --font-family: "Montserrat";
+
+  /* font size */
+  --fs-larger: 64px;
+  --fs-large: 32px;
+  --fs-medium: 16px;
+  --fs-small: 12px;
+  --fs-smaller: 8px;
+}
